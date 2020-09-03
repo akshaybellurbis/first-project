@@ -1,0 +1,1 @@
+click the index.html first

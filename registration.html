@@ -1,78 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Registration</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</head>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+    input[type=date], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+    
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
 <body>
 
-<div class="container">
+<h1>Registration</h1>
 
-  <form class="form-horizontal"  method="post">
+<div>
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="name" placeholder="Your name..">
       
-      <div class="form-group">
-      <label class="control-label col-sm-6"><h2>Fill The User Detail</h2></label>
-    </div>
+      <label for="fname">Position</label>
+    <input type="text" id="Position" name="position" placeholder="Your Position..">
       
-      <div class="form-group">
-      <label class="control-label col-sm-2">Firstname</label>
-      <div class="col-sm-5">
-        <input type="text" class="form-control" name="firstname">
-      </div>
-    </div>
+      <label for="fname">Country</label>
+    <input type="text" id="Country" name="Your" placeholder="Your Country..">
       
-      <div class="form-group">
-      <label class="control-label col-sm-2">Designation</label>
-      <div class="col-sm-5">
-        <input type="text" class="form-control" name="designation">
-      </div>
-    </div>
+      <label for="fname">Age</label>
+    <input type="text" id="Age" name="Age" placeholder="Your Age..">
       
-    <div class="form-group">
-      <label class="control-label col-sm-2">Email:</label>
-      <div class="col-sm-5">
-        <input type="email" class="form-control" name="email">
-      </div>
-    </div>
+       <label for="fname">Salary</label>
+    <input type="text" id="Salary" name="Salary" placeholder="Your Salary..">
       
-      <div class="form-group">
-      <label class="control-label col-sm-2">Date Of  Birth</label>
-      <div class="col-sm-5">
-        <input type="date" class="form-control" name="dateofbirth">
-      </div>
-    </div>
-      
-      <div class="form-group">
-      <label class="control-label col-sm-2">Telephone</label>
-      <div class="col-sm-5">
-          <input type="tel" class="form-control" name="telephone">
-      </div>
-    </div>
-      
-      <div class="form-group">
-      <label class="control-label col-sm-2">Password</label>
-      <div class="col-sm-5">
-        <input type="password" name="password" class="form-control">
-      </div>
-    </div>
-      
-     
-      
-      
-    <div class="form-group">        
-      <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-default" name="save">Submit</button>
-          <a href="userdetail.php" class="btn btn-info col-sm-offset-1" role="button">All User Details</a>
-      </div>
-    </div>
-      
-      
+      <label for="fname">Date Of Birth</label>
+    <input type="date" id="Salary" name="Salary" placeholder="Your Date Of Birth..">
+
+    <label for="lname">Password</label>
+    <input type="text" id="lname" name="password" placeholder="Your Password..">
+
+  
+    <input type="submit" value="Submit">
   </form>
-    
 </div>
 
 </body>
