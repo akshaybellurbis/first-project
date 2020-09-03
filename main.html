@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+    
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 0px;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+  position:static;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 12%;
+  height: 500px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #ccc;
+}
+    li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
+}
+
+
+  
+    .box
+            {
+                                
+                background-color:#f1f1f1;
+                width:88%;
+                height:500px;
+                position:static;  
+            }
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <marquee bgcolor="Gray" align="middle" behaviour="scroll" direction="left" height="auto" width="98%" hspace="10" vspace="10" loop="0" scrollamounte="px" scrolldelay="10" border="5px black">
+          <div class="abc"><font color="white" class="test1"><h1>HTML CSS PROJECT</h1></font></div>
+      </marquee>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="home.php" target="s1"><i class="fa fa-address-book"></i> Home</a></li>
+      <li><a href="login.html" target="s1"><i class="fa fa-user-circle"></i> Login</a></li>
+      <li><a href="registration.html" target="s1"><i class="fa fa-vcard"></i> Registration</a></li>
+        <li><a href="datatable.html" target="s1"><i class="fa fa-users"></i> Datatable</a></li>
+      <li><a href="about.html" target="s1"><i class="fa fa-leaf"></i> About</a></li>
+    </ul>
+  </nav>
+  
+ <div>
+     <iframe src="datatable.html" class="box" name="s1"></iframe>
+</div>
+    
+  
+</section>
+
+<footer>
+ <p style="text-align:center">
+<!--Facebook icon-->
+<a href="http://facebook.com/flashissue" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/ueBIjxRoTBuYR6XWW1iO_v3qVW5nRUq5VZF9RQXi2_twitter.png" /> </a>&nbsp; &nbsp; &nbsp;
+<!--Google+ icon-->
+<a href="http://plus.google.com" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/gHd2XoyiQbKBqljm7bzg_63j3xtd7SX28TTMeOSfZ_google.png" /> </a>&nbsp; &nbsp;&nbsp;
+<!--Twitter icon-->
+<a href="http://twitter.com/flashissue" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/MsIJsIsDT9WLAxxH4aIK_OgdHV3vxSR2737LGd8cq_facebook.png" /> </a>&nbsp; &nbsp;&nbsp;
+<!--Linkedin icon-->
+<a href="http://pinterest.com" target="_blank"><img alt="" src="https://s3.amazonaws.com/flashissue/b8Xt2lN8TCKhilmoHXGW_TCjqF6FgS86WoWzUOQCh_pinterest.png" /> </a>
+</p>
+</footer>
+
+</body>
+</html>
