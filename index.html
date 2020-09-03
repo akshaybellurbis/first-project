@@ -1,0 +1,95 @@
+<html>
+<head><title>launch</title>
+    <style>
+        #outerspace
+        {
+            position:relative;
+            height:800px;
+            background:url("water.jpg");
+        }
+    
+        div.rocket
+        {
+            position:absolute;
+            bottom:30px;
+            left:30px;
+            
+            -webkit-transition:all 3s ease-in;
+            -moz-transition:all 3s ease-in;
+            -o-transition:all 3s ease-in;
+            -ms-transition:all 3s ease-in;
+            -transition:all 3s ease-in;
+        }
+        
+        div.rocket img
+        {
+            -webkit-transition:all 2s ease-in-out;
+            -moz-transition:all 2s ease-in-out;
+            -o-transition:all 2s ease-in-out;
+            -ms-transition:all 2s ease-in-out;
+            -transition:all 2s ease-in-out;
+            
+        }
+        
+        #outerspace:hover div.rocket
+        {
+            -webkit-transform:translate(1240px,-600px);
+            -moz-transform:translate(1240px,-600px);
+            -o-transform:translate(1240px,-600px);
+            -ms-transform:translate(1240px,-600px);
+            -transform:translate(1240px,-600px);
+            
+        }
+        
+        #outerspace:hover div.rocket img
+        {
+            -webkit-transform:rotate(45deg);
+            -moz-transform:rotate(45deg);
+            -o-transform:rotate(45deg);
+            -ms-transform:rotate(45deg);
+            -transform:rotate(45deg);
+        }
+        .box
+        {
+            width:150px;
+            height:50px;
+            background-color:aqua;
+            box-shadow:5px 5px 5px #999;
+            float: right;
+            margin-right: 5px;
+            position:sticky;
+        }
+        h3
+        {
+          margin-left: 20px;
+          margin-top: 5px;
+        }
+        .image1
+        {
+           
+            width:90%;
+            height:150px;
+            background:url("image1.png") no-repeat;
+            position:absolute;
+            -webkit-animation:repeatit 2s linear 0s infinite alternate;
+            -ms-animation:repeatit 2s linear 0s infinite alternate;
+            -moz-animation:repeatit 2s linear 0s infinite alternate;
+            -o-animation:repeatit 2s linear 0s infinite alternate;
+        }
+        @-webkit-keyframes repeatit
+        {from{left:0;}
+            to{left:50%;}
+        }
+    </style></head>
+    <body>
+        
+        <div id="outerspace">
+            <div class="image1"></div>
+            <a href="home.html"><div class="box"><h3>ENTER THE WEBSITE</h3></div></a>
+            
+            <div class="rocket">
+            <img src="rocket.png" alt="bird animation" height="150px" width="92px">
+            </div>       
+        </div>
+    </body>
+</html>
